@@ -47,7 +47,16 @@
 
         // document.write("Person id ="+my.id + "<br> Person name =" + my.name + "<br> Person Date of birth = " + my.DOB + "<br> Person speciality =" + my.Specality);
 
-
+        // using of this keyword in object method
+        function student(st_id,st_name,st_class,st_grade){
+            this.st_id=st_id;
+            this.st_name=st_name;
+            this.st_class=st_class;
+            this.st_grade=st_grade;
+        }
+        let s=new student(01,"najam","Bs","A+");
+        document.write(s.st_id+" "+s.st_name+" "+s.st_class+" "+s.st_grade);
+        
 
 
 

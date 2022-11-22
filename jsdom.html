@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript with DOM</title>
+</head>
+
+<body>
+    <h1 class="headings"></h1>
+    <p class="headings"></p>
+    <h2 id="hdns"></h2>
+    <p class="parss"></p>
+
+    <script>
+        let a =document.getElementsByClassName('headings');
+        let b=document.getElementById('hdns');
+        a[0].innerHTML = "<marquee>This is the DOM Of Js </marquee>";
+        a[0].style.color = "red";
+        a[0].style.backgroundColor = "wheat";
+        a[0].style.height='10vh';
+
+        a[1].innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt reiciendis tempore maxime ipsum, repellat tenetur soluta omnis impedit, dolores debitis corporis facilis magnam nihil minima. Fugiat, distinctio sequi cumque repellendus sit sunt impedit. Fugit similique modi doloribus possimus ducimus deleniti, quaerat voluptates consectetur accusamus officia earum cumque exercitationem impedit tempore nobis quos quia numquam deserunt commodi beatae saepe dolores. Est magni eos distinctio incidunt, quis exercitationem vitae aspernatur delectus consequatur, molestias quia ut iusto accusantium fugit ipsa soluta. Aliquid hic harum consequatur commodi fugiat sapiente. Est explicabo quasi iste possimus at, accusamus vero rem, iusto deserunt voluptatem amet quibusdam?";
+        a[1].style.backgroundColor='yellow';
+        a[1].style.textAlign = "center";
+        a[1]=alert("Bed Time");
+        a[1]=alert("Last warning");
+        b.innerHTML="This is Dom testing";
+    
+    </script>
+</body>
+
+</html>

@@ -122,7 +122,7 @@
         // arr.splice(1 , 0 , "Aser");
         // document.write(arr);
 
-        // 16) Array.map() method
+        // 16) Array.map() method map value in array
         // for multiplication
         // let number = [2,10,39,9];
         // let newnum = number.map(myfun);
@@ -157,31 +157,65 @@
         // document.write(b);
 
 
-        // 17) reduce() method
+        // 17) reduce() method return nagitive value
         // let a = [12,67,987,37];
         // let b =a.reduce(re);
-        // function re(c){
+        // function re(c,a){
         //     return c - a;
         // }
         // document.write(b);
 
-        //  18) reduceright() method
+        //  18) reduceright() method return undifiend value 
         // let a = [3, 2, 1, 0, 'go'];
         // let b = a.reduceRight(rr);
         // function rr(a,min) {
         //     return min - a;
         // }
-        // document.write(a);
+        // document.write(b);
 
-        //19) reverse() method in array
+        //19) reverse() method in array reverse all give array
         // let cars = ["BMW", "Corolla", "Mercidies", "Civic"];
         // let rev = cars.reverse();
         // document.write(rev);
 
-        // 20) Tostring() method
-        // let str = ["Najam","Suffah","Ali","Mehmod"];
+        // 20) Tostring() method change all value in string
+        // let str = ["Najam","Suffah","Ali","Mehmod", 100];
         // let tostr=str.toString();
         // document.write(tostr);
+
+        // 21)Constructor() method 
+        // let veg = ["Lady Finger","Carrot","Raddish","Potato"];
+        // let cons = veg.constructor;
+        // document.write(cons);
+
+        // 22) Every() method return true or false
+        // let eve=["Name","gender","class","date"];
+        // let res = eve.every(reseve);
+        // function reseve(){
+        //     return eve = 'Name';
+        // }
+        // document.write(res);
+
+        // 23) Fill() method replace all arrow value
+        // let birds = ["sparrow","crow","parrot"];
+        // let add = birds.fill("eagle");
+        // document.write(add);
+
+        // 24)findindex() method 
+        // let age =[10,20,30,40,50];
+        // let chkage=age.findIndex(chck);
+        // function chck(age){
+        //     return age >= 40;
+        // }
+        // document.write(chkage);
+
+        // 25)forEach() method
+        let animal = ["lion","zebra","hourse","cheetah"];
+        let result = animal.forEach(animals);
+        function animals(chk){
+            console.log("Heloo"+chk)
+        }
+        document.write(result);
     </script>
 </body>
 

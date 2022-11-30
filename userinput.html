@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompt or User input</title>
 </head>
+
 <body>
-    
+    <p id="para1"></p>
+    <button onclick="ary()">Enter Password</button>
+
 
     <script>
         //let str = prompt("enter value for 1st string: :) ");
-      //  let str1 = prompt("enter value for 2nd string: ;) ");
-       // let add = str.concat(str1);
-        //document.write(add + "<br>");
+        // let str1 = prompt("enter value for 2nd string: ;) ");
+        // let add = str.concat(str1);
+        // document.write(add + "<br>");
+
+        function ary() {
+            let a = prompt("Enter password: ");
+            if (a !== 'I love you') {
+                document.write("Please Try Again: ");
+            }
+            else {
+                document.write("Wellcome To The future! be happy");
+            }
+            document.getElementById('para1').innerHTML = b;
+        }
     </script>
 </body>
+
 </html>

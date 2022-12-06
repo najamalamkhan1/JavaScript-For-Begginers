@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>conditions in JavaScript</title>
 </head>
+
 <body>
-    
+
     <script>
-        // If else condition
+        //simple If else condition
         // let a = 13;
         // if(a > 12){
         //     document.write("Hello JavaScript");
         // }else{
         //     document.write("Hello world");
         // }
+
+        // if else if else condition
+        // let weather = prompt("Enter weather type: ");
+        // if(weather == "cold"){
+        //     document.write("Morning");
+        // }
+        // else if(weather == "hot"){
+        //     document.write("Afternoon");
+        // }
+        // else{
+        //     document.write("Night");
+        // }
+
+        // nested if condition
+        let weather = prompt('Enter Weather type 1)Winter 2)Summer 3)Autmn 4)Spring: ');
+        if (weather == 1){
+            let wint = prompt("Winter is cold what are your rotine in Winter? 1)Hiking 2)Sleeping 3)Go to outside: ");
+            if(wint == 1){
+                document.write("Hinking in winter is very funny");
+            }else if(wint == 2){
+                document.write("I wish I have no work in winter and i sleep everytime: ");
+            }
+            else{
+                document.write("I wish i go to outside to see snow fall: ");
+            }
+        }
+        else if(weather == 2){
+            document.write('The Summer is Hot in Some Cities: ');
+        }
+        else if(weather == 3){
+            document.write('Autmn is Awsome:');
+        }
+        else{
+            document.write('Spring is Very Very Booring: ');
+        }
+
+
     </script>
 </body>
+
 </html>

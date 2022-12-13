@@ -47,9 +47,15 @@
     <!-- <button onfocus="a()" onblur="b()" id="ip">Click</button>
     <input type="text" > -->
 
-    <!-- for input event -->
+    <!-- for oninput event -->
     <!-- <input type="text" id="ip" oninput="a()"> -->
+   
+    <!-- for onselect event -->
+    <!-- <input type="text" id="ip" onselect="slt()"> -->
 
+    <!-- for onchange event -->
+    <input onchange="chng()" type="text" id="ip">
+    <p id="para"></p>
 
 
     <script>
@@ -81,9 +87,19 @@
         //     let inp = document.getElementById('ip');
         //     inp.innerText = 'input done';
         //     console.log(inp);
-
         // }
 
+        // for select event
+        // function slt(){
+        //     let a = document.getElementById('ip');
+        //     alert('Selection prohibited');
+        // }
+
+        let chng = ()=>{
+            let i = document.getElementById('ip');
+            let p = document.getElementById('para').value;
+            i.innerHTML = p;
+        }
     </script>
 </body>
 

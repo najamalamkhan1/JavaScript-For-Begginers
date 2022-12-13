@@ -49,12 +49,18 @@
 
     <!-- for oninput event -->
     <!-- <input type="text" id="ip" oninput="a()"> -->
-   
+
     <!-- for onselect event -->
     <!-- <input type="text" id="ip" onselect="slt()"> -->
 
     <!-- for onchange event -->
-    <input onchange="chng()" type="text" id="ip">
+    <select name="Phones" id="Phones" onchange="chng()">
+        <option value="Select">Select</option>
+        <option value="Iphone">Iphone</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Oppo">Oppo</option>
+    </select>
+
     <p id="para"></p>
 
 
@@ -95,10 +101,9 @@
         //     alert('Selection prohibited');
         // }
 
-        let chng = ()=>{
-            let i = document.getElementById('ip');
-            let p = document.getElementById('para').value;
-            i.innerHTML = p;
+        let chng = () => {
+            let i = document.getElementById('Phones').value;
+            document.getElementById('para').innerHTML = "You select " + i;
         }
     </script>
 </body>
